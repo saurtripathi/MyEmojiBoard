@@ -1,0 +1,125 @@
+body {
+    background-color: #e9edc9;
+    font-family: 'Good Mood', sans-serif;
+}
+
+.heading1 {
+    font-size: 60px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, #2a9d8f, #e9c46a);
+    color: #fefae0;
+}
+
+#p-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px;
+    width: 600px;
+    height: 400px;
+}
+
+#emoji-p {
+    margin-bottom: -40px;
+    font-size: 50px;
+    text-align: center;
+    background-color: #e9edc9;
+    border-radius: 10px;
+    border: none;
+    padding-top: 5px 10px;
+}
+
+input {
+    width: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    background-color: #f4a261;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+
+
+.edit-front-emoji {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit-back-emoji {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divider {
+    width: 100px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+.sub-con {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #264653;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
